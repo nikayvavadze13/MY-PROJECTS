@@ -1,0 +1,39 @@
+#parent {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    left: 43%;
+    top: 28%;
+}
+
+#display {
+    width: 395px;
+    height: 100px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+    color: white;
+    font-size: 35px;
+}
+
+#main {
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color: rgb(255, 179, 38);
+    font-size: 30px;
+}
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
