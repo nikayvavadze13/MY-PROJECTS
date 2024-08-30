@@ -18,7 +18,6 @@ WINNER_FONT = pygame.font.SysFont('comicsans', 100)
 YELLLOW_HIT = pygame.USEREVENT + 1
 RED_HIT = pygame.USEREVENT + 2
 BULLET_VEL = 7
-MAX_BULLETS = 15
 
 
 
@@ -30,11 +29,11 @@ SPACESHIP_HEIGHT = 40
 BORDER = pygame.Rect(WIDTH//2 - 5, 0, 10, HEIGHT)
 
 WINDOW = pygame.display.set_mode((900, 500))
-SPACE = pygame.transform.scale(pygame.image.load(os.path.join("python projects","pyGame",'Assets', 'space.png')), (WIDTH, HEIGHT))
-YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join("python projects","pyGame","Assets", "spaceship_yellow.png"))
+SPACE = pygame.transform.scale(pygame.image.load(os.path.join("python projects","pyGame", "spaceship 1v1",'Assets', 'space.png')), (WIDTH, HEIGHT))
+YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join("python projects","pyGame", "spaceship 1v1","Assets", "spaceship_yellow.png"))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
     YELLOW_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 90)
-RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join("python projects","pyGame",'Assets', 'spaceship_red.png'))
+RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join("python projects","pyGame", "spaceship 1v1",'Assets', 'spaceship_red.png'))
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(
     RED_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 270)
 
@@ -55,6 +54,7 @@ def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_hea
 
     for bullet in red_bullets:
         pygame.draw.rect(WINDOW, YELLOW, bullet)
+
     pygame.draw.rect(WINDOW, (0, 0, 0), BORDER)
     pygame.display.update()
 
@@ -125,7 +125,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-                pygame.quit()
+                quit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_c:
                     bullets = pygame.Rect(yellow.x - yellow.width, yellow.y + 23, 10, 5)
@@ -163,7 +163,5 @@ def main():
 
 
 
-    main()
+main()
 
-if __name__ == "__main__":
-    main()

@@ -1,0 +1,225 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+
+.arrow {
+    font-size: 30px;
+    margin: 0;
+    color: rgb(195, 187, 187);
+}
+
+#right-arrow {
+    margin-left: 40px;
+    margin-top: -35px;
+}
+
+#arrows-div{
+    position: absolute;
+    top: 10px;
+    right: 90%;
+}
+
+#house-button {
+    background-color: rgb(43, 43, 43);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+#search-field {
+    margin-left: 10px;
+    width: 360px;
+    height: 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(43, 43, 43);
+}
+
+#search-field::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+#search-field:hover{
+    opacity: 0.7;
+    border: solid 0.7px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.bell-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(43, 43, 43);
+}
+
+#nav-buttons {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+
+#main-beside{
+    background-color: #0F1214;
+    height: 1000px;
+    width: 60px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#main-div-block {
+    position: absolute;
+    top: 200px;
+    height: 1000px;
+    width: 95%;
+    left: 80px;
+    top: 55px;
+}
+
+#ye-profile {
+    background: linear-gradient(180deg, #162d43 0%, #13172d 100%);
+    width: 100%;
+    height: 240px;
+}
+
+#songs{
+    width: 100%;
+    height: 76%;
+    background-color: #0F1214;
+}
+
+#ye-album-cover{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#album-text{
+    color: white;
+    font-family: "Noto Sans Hanunoo", sans-serif;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    left: 240px;
+}
+
+#ye {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    position: absolute;
+    top: 35px;
+    left: 245px;
+
+}
+
+#about-album{
+    display: flex;
+    position: absolute;
+    top: 180px;
+    left: 240px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+
+#ye-profile-picture{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+#span1{
+    color: rgb(192, 189, 189);
+}
+
+#liked-img{
+    position: absolute;
+}
+
+#kdot-profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-left: 7px;
+}
+
+#ye-profilel{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+#mfdoom{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+#collegedropout{
+    width: 45px;
+    height: 45px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+hr{
+    position: absolute;
+    top: 350px;
+    width: 97.5%;
+    left: 20px;
+    border: solid 0.1px;
+    border-color: rgba(102, 101, 101, 0.269);
+}
+
+#turnon-button{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 100%;
+    background-color: #1ED760;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#shuffle-button{
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+#list{
+    color: rgba(255, 255, 255, 0.471);
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 270px;
+    left: 98%;
+    font-size: small;
+}
